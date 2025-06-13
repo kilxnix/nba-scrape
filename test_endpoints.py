@@ -174,7 +174,7 @@ class StatsProcessor:
 
 # Create test endpoints
 @app.route('/test/process-stats', methods=['POST'])
-def test_process_stats():
+def process_stats_endpoint():
     """
     Test endpoint for statistics processing with integrity verification.
     

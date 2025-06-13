@@ -17,6 +17,7 @@ from datetime import datetime
 from .database import db_transaction
 import requests
 from .teams import NBA_TEAMS
+from .utils import parse_game_date
 
 class NBAScheduleFetcher:
     def __init__(self, conn_string: str):
@@ -437,6 +438,57 @@ class NBAScheduleFetcher:
         except Exception as e:
             logging.error(f"Error fetching schedule: {e}")
             return []
+
+    def fetch_team_schedule_api(self, team_abbr: str):
+        """Fetch a team's full schedule using ESPN's team schedule page.
+
+        This implementation avoids Selenium by requesting the schedule HTML
+        directly and parsing the table rows with BeautifulSoup.  It captures all
+        regular season and playoff games that are present on the page.
+        """
+        url = f"https://www.espn.com/nba/team/schedule/_/name/{team_abbr}"
+        headers = {"User-Agent": "Mozilla/5.0"}
+        try:
+            resp = requests.get(url, headers=headers, timeout=10)
+            if resp.status_code != 200:
+                logging.error(
+                    "Schedule request failed for %s: status %s",
+                    team_abbr,
+                    resp.status_code,
+                )
+                return []
+
+            soup = BeautifulSoup(resp.text, "html.parser")
+            games = []
+            rows = soup.select("tr.Table__TR")
+            for row in rows:
+                cells = row.find_all("td", class_="Table__TD")
+                if len(cells) < 2:
+                    continue
+
+                # Skip header rows
+                if cells[0].text.strip().upper() == "DATE":
+                    continue
+
+                link = row.find("a", href=lambda x: x and "gameId" in x)
+                if not link:
+                    continue
+
+                event_id = link["href"].split("gameId/")[1].split("/")[0]
+                games.append(
+                    {
+                        "date": cells[0].text.strip(),
+                        "opponent": cells[1].text.strip(),
+                        "event_id": event_id,
+                    }
+                )
+
+            logging.info("Found %d games for %s", len(games), team_abbr)
+            return games
+
+        except Exception as e:
+            logging.error("Error fetching schedule for %s: %s", team_abbr, e)
+            return []
     
     def get_db_connection(self):
         conn = None
@@ -460,12 +512,12 @@ class NBAScheduleFetcher:
                     # Extract game metadata
                     event_id = game['event_id']
                     date_str = game['date'].strip()
-                    
-                    # Parse game date
-                    date_parts = date_str.split(', ')[1].strip().split(' ')
-                    month, day = date_parts[0], int(date_parts[1])
-                    year = 2024 if month.lower() in ['oct', 'nov', 'dec'] else 2025
-                    game_date = f"{year}-{datetime.strptime(month,'%b').month:02d}-{day:02d}"
+
+                    # Parse game date using dynamic season logic
+                    parsed_dt = parse_game_date(date_str)
+                    if not parsed_dt:
+                        continue
+                    game_date = parsed_dt.strftime('%Y-%m-%d')
                     
                     # Use the improved DOM-based resolution for all teams
                     home_team_id, away_team_id = self._resolve_team_by_selenium(event_id)
