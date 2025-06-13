@@ -318,7 +318,7 @@ def fetch_date_range_schedules():
 
 @app.route('/team_schedule/<team_abbr>', methods=['GET'])
 def team_schedule(team_abbr):
-    """Return the full schedule for a team using the ESPN API."""
+    """Return the full schedule for a team using ESPN's schedule page."""
     team_abbr = team_abbr.lower()
     if team_abbr not in NBA_TEAMS:
         return jsonify({'error': 'Invalid team abbreviation'}), 400
