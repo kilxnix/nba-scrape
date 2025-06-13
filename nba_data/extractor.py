@@ -308,6 +308,29 @@ class BoxScoreFetcher:
             resp.raise_for_status()
             boxscore_data = resp.json()
 
+            # Verify required data exists and game is completed
+            status_completed = False
+            try:
+                status_completed = (
+                    boxscore_data.get("header", {})
+                    .get("competitions", [{}])[0]
+                    .get("status", {})
+                    .get("type", {})
+                    .get("completed")
+                )
+            except Exception:
+                status_completed = False
+
+            if not (
+                boxscore_data.get("boxscore")
+                and boxscore_data.get("boxscore", {}).get("players")
+                and status_completed
+            ):
+                logger.warning(
+                    f"Game {event_id} missing required data or not completed"
+                )
+                return False
+
             self.save_team_stats(conn, game_id, home_team_id, boxscore_data)
             self.save_team_stats(conn, game_id, away_team_id, boxscore_data)
             self.save_player_stats(conn, game_id, home_team_id, boxscore_data)
