@@ -1,0 +1,13 @@
+{
+  "away_team": "utah",
+  "away_team_id": "utah",
+  "created_at": "2025-01-27T21:04:04.713241+00:00",
+  "data_hash": "336ec9d72e696f958e69fcc75a176ee965f3644625ad37e1d3d847987d5d85a8",
+  "event_id": "401704676",
+  "game_date": "2024-10-28",
+  "game_id": 1562,
+  "game_timestamp": "2024-10-28T00:00:00",
+  "home_team": "dal",
+  "home_team_id": "dal",
+  "updated_at": "2025-01-27T22:38:33.507445+00:00"
+}

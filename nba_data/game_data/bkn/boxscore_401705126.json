@@ -1,0 +1,13 @@
+{
+  "away_team": "bkn",
+  "away_team_id": "bkn",
+  "created_at": "2025-01-27T20:58:40.352598+00:00",
+  "data_hash": "9cec8db2e4b273f55142cfe04b5ec591136614ccbee7602baeadc635d84290b2",
+  "event_id": "401705126",
+  "game_date": "2025-01-14",
+  "game_id": 122,
+  "game_timestamp": "2025-01-14T00:00:00",
+  "home_team": "por",
+  "home_team_id": "por",
+  "updated_at": "2025-01-27T22:37:03.831695+00:00"
+}

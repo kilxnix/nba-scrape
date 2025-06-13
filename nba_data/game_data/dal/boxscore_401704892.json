@@ -1,0 +1,13 @@
+{
+  "away_team": "dal",
+  "away_team_id": "dal",
+  "created_at": "2025-01-27T21:02:34.584143+00:00",
+  "data_hash": "fdea9c341b5ca6ad4ef964df0f2e01c2068a6201cd51a7c2856959d24484fb82",
+  "event_id": "401704892",
+  "game_date": "2024-12-05",
+  "game_id": 1168,
+  "game_timestamp": "2024-12-05T00:00:00",
+  "home_team": "wsh",
+  "home_team_id": "wsh",
+  "updated_at": "2025-01-27T22:38:33.507445+00:00"
+}

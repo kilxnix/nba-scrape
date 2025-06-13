@@ -1,0 +1,12 @@
+{
+  "away_team": "mem",
+  "away_team_id": "mem",
+  "created_at": "2025-01-27T21:04:59.374692+00:00",
+  "data_hash": "b54e1504a51ce97a348e416353f6fde59d59794759bf7c5583e2fa2f9aff4e3e",
+  "event_id": "401705644",
+  "game_date": "2025-03-29",
+  "game_id": 1878,
+  "home_team": "lal",
+  "home_team_id": "lal",
+  "updated_at": "2025-01-30T23:20:01.760802+00:00"
+}

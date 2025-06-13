@@ -1,0 +1,13 @@
+{
+  "away_team": "orl",
+  "away_team_id": "orl",
+  "created_at": "2025-01-27T20:59:51.657899+00:00",
+  "data_hash": "688c482c99d865c2bb7177c5918c82fe4392629f5d94ad98e5fe2cf2f3c4db45",
+  "event_id": "401704689",
+  "game_date": "2024-10-30",
+  "game_id": 415,
+  "game_timestamp": "2024-10-30T00:00:00",
+  "home_team": "chi",
+  "home_team_id": "chi",
+  "updated_at": "2025-01-27T22:35:59.430187+00:00"
+}

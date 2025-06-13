@@ -1,0 +1,13 @@
+{
+  "away_team": "gsw",
+  "away_team_id": "gsw",
+  "created_at": "2025-01-27T21:02:52.400729+00:00",
+  "data_hash": "350d8c8da67ff13eea61ce770dc6086a42fa8f203d98b8caf4a1f80c0014869c",
+  "event_id": "401703427",
+  "game_date": "2024-12-03",
+  "game_id": 1249,
+  "game_timestamp": "2024-12-03T00:00:00",
+  "home_team": "den",
+  "home_team_id": "den",
+  "updated_at": "2025-01-27T22:37:29.631426+00:00"
+}

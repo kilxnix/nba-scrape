@@ -1,0 +1,13 @@
+{
+  "away_team": "lal",
+  "away_team_id": "lal",
+  "created_at": "2025-01-27T21:04:41.349252+00:00",
+  "data_hash": "5896f658ef582eda8fa111e3b710081195533f3cbf90b6515048ddd0ed9285e9",
+  "event_id": "401703385",
+  "game_date": "2024-11-15",
+  "game_id": 1736,
+  "game_timestamp": "2024-11-15T00:00:00",
+  "home_team": "hou",
+  "home_team_id": "hou",
+  "updated_at": "2025-01-27T22:38:46.271450+00:00"
+}

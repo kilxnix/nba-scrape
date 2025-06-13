@@ -1,0 +1,13 @@
+{
+  "away_team": "gsw",
+  "away_team_id": "gsw",
+  "created_at": "2025-01-27T21:03:10.229492+00:00",
+  "data_hash": "3f5e8acad8b1d64716f15f85bee473d45e287fb6f56b72c5c27411bfa8725e8d",
+  "event_id": "401705131",
+  "game_date": "2025-01-15",
+  "game_id": 1352,
+  "game_timestamp": "2025-01-15T00:00:00",
+  "home_team": "min",
+  "home_team_id": "min",
+  "updated_at": "2025-01-27T22:37:29.631426+00:00"
+}

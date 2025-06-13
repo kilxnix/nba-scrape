@@ -1,0 +1,12 @@
+{
+  "away_team": "atl",
+  "away_team_id": "atl",
+  "created_at": "2025-01-27T21:01:22.828600+00:00",
+  "data_hash": "4960a581b1036c9b096598ca2a98c652b4ac0c3064ae78841441bd64316385ec",
+  "event_id": "401704666",
+  "game_date": "2024-10-27",
+  "game_id": 823,
+  "home_team": "okc",
+  "home_team_id": "okc",
+  "updated_at": "2025-01-31T04:16:41.242253+00:00"
+}

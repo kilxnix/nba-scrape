@@ -1,0 +1,13 @@
+{
+  "away_team": "bos",
+  "away_team_id": "bos",
+  "created_at": "2025-01-27T20:58:22.074612+00:00",
+  "data_hash": "2fa0364f9e6900a1d782286a72bd27d5e042c4113382422e0685afd18ba6f000",
+  "event_id": "401705053",
+  "game_date": "2025-01-05",
+  "game_id": 36,
+  "game_timestamp": "2025-01-05T00:00:00",
+  "home_team": "okc",
+  "home_team_id": "okc",
+  "updated_at": "2025-01-27T22:36:50.885617+00:00"
+}

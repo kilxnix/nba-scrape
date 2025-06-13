@@ -1,0 +1,13 @@
+{
+  "away_team": "sac",
+  "away_team_id": "sac",
+  "created_at": "2025-01-27T21:03:10.229492+00:00",
+  "data_hash": "a38ca3a9418b2d459b9ce273b598317b76dcac26c3168803cf9dbd4c06c3bc1c",
+  "event_id": "401704860",
+  "game_date": "2024-11-27",
+  "game_id": 1330,
+  "game_timestamp": "2024-11-27T00:00:00",
+  "home_team": "min",
+  "home_team_id": "min",
+  "updated_at": "2025-01-27T22:38:20.692423+00:00"
+}

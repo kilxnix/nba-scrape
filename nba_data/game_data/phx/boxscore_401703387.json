@@ -1,0 +1,13 @@
+{
+  "away_team": "phx",
+  "away_team_id": "phx",
+  "created_at": "2025-01-27T21:03:28.478454+00:00",
+  "data_hash": "2fbceac2ee8f284c0fbb9bc0af342ccd6b616d27bdd185759b1d84c7480b58b7",
+  "event_id": "401703387",
+  "game_date": "2024-11-15",
+  "game_id": 1407,
+  "game_timestamp": "2024-11-15T00:00:00",
+  "home_team": "okc",
+  "home_team_id": "okc",
+  "updated_at": "2025-01-27T22:38:07.762408+00:00"
+}

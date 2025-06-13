@@ -1,0 +1,13 @@
+{
+  "away_team": "mil",
+  "away_team_id": "mil",
+  "created_at": "2025-01-27T20:58:58.077773+00:00",
+  "data_hash": "0e0648b433b42ad668f34e9963cf46b1d80d668c3c2071f76c0ad6a5a6ef1e81",
+  "event_id": "401705105",
+  "game_date": "2025-01-12",
+  "game_id": 204,
+  "game_timestamp": "2025-01-12T00:00:00",
+  "home_team": "nyk",
+  "home_team_id": "nyk",
+  "updated_at": "2025-01-27T22:35:07.606667+00:00"
+}

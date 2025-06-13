@@ -1,0 +1,13 @@
+{
+  "away_team": "bkn",
+  "away_team_id": "bkn",
+  "created_at": "2025-01-27T20:58:40.352598+00:00",
+  "data_hash": "dcef056f979ab74cc67549a0fcd987ab6b4e41cc5c45c311b487aef7a24b3426",
+  "event_id": "401704806",
+  "game_date": "2024-11-17",
+  "game_id": 96,
+  "game_timestamp": "2024-11-17T00:00:00",
+  "home_team": "nyk",
+  "home_team_id": "nyk",
+  "updated_at": "2025-01-27T22:33:37.207241+00:00"
+}

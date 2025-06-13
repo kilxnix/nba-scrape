@@ -1,0 +1,13 @@
+{
+  "away_team": "atl",
+  "away_team_id": "atl",
+  "created_at": "2025-01-27T20:59:51.657899+00:00",
+  "data_hash": "b1248ff36a6feffd24e2217afbb22c0bb1eabaa722cc49952d23e5be70c1d6fa",
+  "event_id": "401703399",
+  "game_date": "2024-11-22",
+  "game_id": 427,
+  "game_timestamp": "2024-11-22T00:00:00",
+  "home_team": "chi",
+  "home_team_id": "chi",
+  "updated_at": "2025-01-27T22:35:20.385605+00:00"
+}

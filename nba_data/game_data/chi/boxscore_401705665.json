@@ -1,0 +1,12 @@
+{
+  "away_team": "tor",
+  "away_team_id": "tor",
+  "created_at": "2025-01-27T20:59:33.901233+00:00",
+  "data_hash": "4ad555f53147a54cd0a6c3611792619cd0105263b69e0ef3dba580573933a83a",
+  "event_id": "401705665",
+  "game_date": "2025-04-01",
+  "game_id": 404,
+  "home_team": "chi",
+  "home_team_id": "chi",
+  "updated_at": "2025-01-31T04:15:11.503073+00:00"
+}

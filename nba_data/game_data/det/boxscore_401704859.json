@@ -1,0 +1,13 @@
+{
+  "away_team": "det",
+  "away_team_id": "det",
+  "created_at": "2025-01-27T21:00:28.740487+00:00",
+  "data_hash": "6f74ad5651130ca50ab0f7d1c2c72a8ac20fe1a548bd5bed2404428431d33e5c",
+  "event_id": "401704859",
+  "game_date": "2024-11-27",
+  "game_id": 594,
+  "game_timestamp": "2024-11-27T00:00:00",
+  "home_team": "mem",
+  "home_team_id": "mem",
+  "updated_at": "2025-01-27T22:38:58.975779+00:00"
+}

@@ -1,0 +1,13 @@
+{
+  "away_team": "cha",
+  "away_team_id": "cha",
+  "created_at": "2025-01-27T21:01:40.706082+00:00",
+  "data_hash": "b9f85f61e11b9da8be1eb513376b4553c2da8b23c169977836787e5472f4149a",
+  "event_id": "401705113",
+  "game_date": "2025-01-12",
+  "game_id": 938,
+  "game_timestamp": "2025-01-12T00:00:00",
+  "home_team": "phx",
+  "home_team_id": "phx",
+  "updated_at": "2025-01-27T22:38:07.762408+00:00"
+}

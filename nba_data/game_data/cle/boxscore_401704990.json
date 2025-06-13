@@ -1,0 +1,13 @@
+{
+  "away_team": "cle",
+  "away_team_id": "cle",
+  "created_at": "2025-01-27T21:00:10.636133+00:00",
+  "data_hash": "f96b720c2a7e0f68c9cd5d5b9613458c1405bfca19c5a866a5f3c7b2fe7660ed",
+  "event_id": "401704990",
+  "game_date": "2024-12-27",
+  "game_id": 523,
+  "game_timestamp": "2024-12-27T00:00:00",
+  "home_team": "den",
+  "home_team_id": "den",
+  "updated_at": "2025-01-27T22:36:24.970070+00:00"
+}

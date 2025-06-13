@@ -1,0 +1,13 @@
+{
+  "away_team": "lac",
+  "away_team_id": "lac",
+  "created_at": "2025-01-27T20:59:16.102488+00:00",
+  "data_hash": "cf19b8d84a2c92e45060fec988131b71eb7084f68017da3a425209a1c0e7509a",
+  "event_id": "401704840",
+  "game_date": "2024-11-24",
+  "game_id": 262,
+  "game_timestamp": "2024-11-24T00:00:00",
+  "home_team": "phi",
+  "home_team_id": "phi",
+  "updated_at": "2025-01-27T22:37:42.580691+00:00"
+}

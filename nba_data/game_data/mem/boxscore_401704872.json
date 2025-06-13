@@ -1,0 +1,12 @@
+{
+  "away_team": "ind",
+  "away_team_id": "ind",
+  "created_at": "2025-01-27T21:00:46.969481+00:00",
+  "data_hash": "80fd66675ca0101d271acb688b229e8fb8abe825736451fef8fbf80478cc1dfa",
+  "event_id": "401704872",
+  "game_date": "2024-12-01",
+  "game_id": 677,
+  "home_team": "mem",
+  "home_team_id": "mem",
+  "updated_at": "2025-01-31T04:16:05.312689+00:00"
+}

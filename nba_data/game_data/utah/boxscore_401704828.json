@@ -1,0 +1,13 @@
+{
+  "away_team": "utah",
+  "away_team_id": "utah",
+  "created_at": "2025-01-27T21:04:04.713241+00:00",
+  "data_hash": "ca402c52f3d9d5cbd2f53a08b9d6c27da1c6cc098d2465451f51550f6c7081c3",
+  "event_id": "401704828",
+  "game_date": "2024-11-21",
+  "game_id": 1574,
+  "game_timestamp": "2024-11-21T00:00:00",
+  "home_team": "sas",
+  "home_team_id": "sas",
+  "updated_at": "2025-01-27T22:39:24.771480+00:00"
+}

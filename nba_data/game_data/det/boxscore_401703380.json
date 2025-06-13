@@ -1,0 +1,13 @@
+{
+  "away_team": "det",
+  "away_team_id": "det",
+  "created_at": "2025-01-27T20:59:33.901233+00:00",
+  "data_hash": "bac52670bff12352ab689349ad91ff357faa6e2a5b25ab628c6caf2e593a2c6f",
+  "event_id": "401703380",
+  "game_date": "2024-11-15",
+  "game_id": 341,
+  "game_timestamp": "2024-11-15T00:00:00",
+  "home_team": "tor",
+  "home_team_id": "tor",
+  "updated_at": "2025-01-27T22:34:41.730645+00:00"
+}

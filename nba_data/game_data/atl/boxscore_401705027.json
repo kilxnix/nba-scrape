@@ -1,0 +1,13 @@
+{
+  "away_team": "atl",
+  "away_team_id": "atl",
+  "created_at": "2025-01-27T21:01:22.828600+00:00",
+  "data_hash": "21b4853d8c2a7189fa05b36bf54d32c375f36674a648f124fe3075652a3850e8",
+  "event_id": "401705027",
+  "game_date": "2025-01-01",
+  "game_id": 854,
+  "game_timestamp": "2025-01-01T00:00:00",
+  "home_team": "den",
+  "home_team_id": "den",
+  "updated_at": "2025-01-27T22:36:24.970070+00:00"
+}

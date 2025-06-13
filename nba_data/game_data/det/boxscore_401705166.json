@@ -1,0 +1,13 @@
+{
+  "away_team": "det",
+  "away_team_id": "det",
+  "created_at": "2025-01-27T21:00:28.740487+00:00",
+  "data_hash": "039debbbee761c660721378d8eef27881f02ed83c5e9f87754a97dabd814fa0e",
+  "event_id": "401705166",
+  "game_date": "2025-01-20",
+  "game_id": 617,
+  "game_timestamp": "2025-01-20T00:00:00",
+  "home_team": "hou",
+  "home_team_id": "hou",
+  "updated_at": "2025-01-27T22:38:46.271450+00:00"
+}

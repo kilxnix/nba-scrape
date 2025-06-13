@@ -1,0 +1,13 @@
+{
+  "away_team": "chi",
+  "away_team_id": "chi",
+  "created_at": "2025-01-27T20:59:51.657899+00:00",
+  "data_hash": "b9a21f37695777477157eb3e69a2b102a2161aeab8cd3c9cde1969004e71d8ba",
+  "event_id": "401703404",
+  "game_date": "2024-11-26",
+  "game_id": 429,
+  "game_timestamp": "2024-11-26T00:00:00",
+  "home_team": "wsh",
+  "home_team_id": "wsh",
+  "updated_at": "2025-01-27T22:36:12.275521+00:00"
+}

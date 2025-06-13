@@ -1,0 +1,13 @@
+{
+  "away_team": "bos",
+  "away_team_id": "bos",
+  "created_at": "2025-01-27T20:58:22.074612+00:00",
+  "data_hash": "33ecf64c4af35b26db929a852cac20599c1995ad2fa4a4937d117df9916d2339",
+  "event_id": "401704784",
+  "game_date": "2024-11-13",
+  "game_id": 13,
+  "game_timestamp": "2024-11-13T00:00:00",
+  "home_team": "bkn",
+  "home_team_id": "bkn",
+  "updated_at": "2025-01-27T22:33:24.264389+00:00"
+}

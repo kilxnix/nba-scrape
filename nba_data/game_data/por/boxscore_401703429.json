@@ -1,0 +1,13 @@
+{
+  "away_team": "por",
+  "away_team_id": "por",
+  "created_at": "2025-01-27T21:03:46.735318+00:00",
+  "data_hash": "aadfa7ce2c0669b1835ef44396548ca6c79a8796454e6fe7c6465d661b342293",
+  "event_id": "401703429",
+  "game_date": "2024-12-03",
+  "game_id": 1499,
+  "game_timestamp": "2024-12-03T00:00:00",
+  "home_team": "lac",
+  "home_team_id": "lac",
+  "updated_at": "2025-01-27T22:37:42.580691+00:00"
+}

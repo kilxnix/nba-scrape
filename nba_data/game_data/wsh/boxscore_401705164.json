@@ -1,0 +1,13 @@
+{
+  "away_team": "wsh",
+  "away_team_id": "wsh",
+  "created_at": "2025-01-27T21:02:34.584143+00:00",
+  "data_hash": "4ab883cb377a1e4ff7da890c42ca4b45cb80f496a3d46c9ad1101f5219a4166b",
+  "event_id": "401705164",
+  "game_date": "2025-01-19",
+  "game_id": 1189,
+  "game_timestamp": "2025-01-19T00:00:00",
+  "home_team": "sac",
+  "home_team_id": "sac",
+  "updated_at": "2025-01-27T22:38:20.692423+00:00"
+}

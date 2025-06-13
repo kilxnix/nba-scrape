@@ -1,0 +1,13 @@
+{
+  "away_team": "no",
+  "away_team_id": "no",
+  "created_at": "2025-01-27T21:06:12.093767+00:00",
+  "data_hash": "facde52f0471afe98e66dd9d7ee8434fd947a846b50510c95ea2fa8a26b472f5",
+  "event_id": "401704931",
+  "game_date": "2024-12-19",
+  "game_id": 2159,
+  "game_timestamp": "2024-12-19T00:00:00",
+  "home_team": "hou",
+  "home_team_id": "hou",
+  "updated_at": "2025-01-27T22:39:11.890426+00:00"
+}

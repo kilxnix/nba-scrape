@@ -1,0 +1,13 @@
+{
+  "away_team": "sac",
+  "away_team_id": "sac",
+  "created_at": "2025-01-27T21:05:17.278316+00:00",
+  "data_hash": "f49e6096e23d11f3b5562686e9e7f002b16732edab07dcbb35202ed6a945cf54",
+  "event_id": "401704775",
+  "game_date": "2024-11-10",
+  "game_id": 1896,
+  "game_timestamp": "2024-11-10T00:00:00",
+  "home_team": "phx",
+  "home_team_id": "phx",
+  "updated_at": "2025-01-27T22:38:20.692423+00:00"
+}

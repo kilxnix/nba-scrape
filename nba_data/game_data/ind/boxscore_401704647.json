@@ -1,0 +1,13 @@
+{
+  "away_team": "ind",
+  "away_team_id": "ind",
+  "created_at": "2025-01-27T20:58:58.077773+00:00",
+  "data_hash": "9fe9adf93da1700224c344efeffbdf10909cbeecc33256d276a0ac33d3276585",
+  "event_id": "401704647",
+  "game_date": "2024-10-25",
+  "game_id": 166,
+  "game_timestamp": "2024-10-25T00:00:00",
+  "home_team": "nyk",
+  "home_team_id": "nyk",
+  "updated_at": "2025-01-27T22:34:54.463790+00:00"
+}

@@ -1,0 +1,13 @@
+{
+  "away_team": "utah",
+  "away_team_id": "utah",
+  "created_at": "2025-01-27T20:58:40.352598+00:00",
+  "data_hash": "3c3ab50456beb1a29402f44467936c9bad13fbcb26da6ee225b5b9b3fe0f33d9",
+  "event_id": "401704945",
+  "game_date": "2024-12-21",
+  "game_id": 110,
+  "game_timestamp": "2024-12-21T00:00:00",
+  "home_team": "bkn",
+  "home_team_id": "bkn",
+  "updated_at": "2025-01-27T22:37:16.506933+00:00"
+}

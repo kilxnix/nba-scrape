@@ -1,0 +1,13 @@
+{
+  "away_team": "bkn",
+  "away_team_id": "bkn",
+  "created_at": "2025-01-27T20:58:40.352598+00:00",
+  "data_hash": "470b13b6ae67856b7b6d807394ef9e22d8fe641a9439f4c9d6e8d5ee270460d0",
+  "event_id": "401704842",
+  "game_date": "2024-11-24",
+  "game_id": 99,
+  "game_timestamp": "2024-11-24T00:00:00",
+  "home_team": "sac",
+  "home_team_id": "sac",
+  "updated_at": "2025-01-27T22:38:20.692423+00:00"
+}

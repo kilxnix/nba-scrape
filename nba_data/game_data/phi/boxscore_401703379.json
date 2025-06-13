@@ -1,0 +1,13 @@
+{
+  "away_team": "phi",
+  "away_team_id": "phi",
+  "created_at": "2025-01-27T20:59:16.102488+00:00",
+  "data_hash": "0e41c44847e7b900bc795dc2b843943acc0c33f630071618d388232bf78ad02e",
+  "event_id": "401703379",
+  "game_date": "2024-11-15",
+  "game_id": 258,
+  "game_timestamp": "2024-11-15T00:00:00",
+  "home_team": "orl",
+  "home_team_id": "orl",
+  "updated_at": "2025-01-27T22:35:59.430187+00:00"
+}

@@ -1,0 +1,13 @@
+{
+  "away_team": "bkn",
+  "away_team_id": "bkn",
+  "created_at": "2025-01-27T20:58:40.352598+00:00",
+  "data_hash": "d464fe537e601bb5a43cbaaf91b369c64478c91891e5f09487adef66a7f497d3",
+  "event_id": "401704630",
+  "game_date": "2024-10-23",
+  "game_id": 83,
+  "game_timestamp": "2024-10-23T00:00:00",
+  "home_team": "atl",
+  "home_team_id": "atl",
+  "updated_at": "2025-01-27T22:35:20.385605+00:00"
+}

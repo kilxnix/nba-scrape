@@ -1,0 +1,12 @@
+{
+  "away_team": "atl",
+  "away_team_id": "atl",
+  "created_at": "2025-01-27T20:59:33.901233+00:00",
+  "data_hash": "0750c0c18f3552961c072b165c91358b970a4661d957507c67531aa55dba5b10",
+  "event_id": "401705004",
+  "game_date": "2024-12-29",
+  "game_id": 360,
+  "home_team": "tor",
+  "home_team_id": "tor",
+  "updated_at": "2025-01-31T04:16:41.242253+00:00"
+}

@@ -1,0 +1,13 @@
+{
+  "away_team": "utah",
+  "away_team_id": "utah",
+  "created_at": "2025-01-27T21:02:16.662897+00:00",
+  "data_hash": "81f56a3e027c07d775b657c97078dc2b462dbd06cdeaf23a0f364b663e72336b",
+  "event_id": "401705056",
+  "game_date": "2025-01-05",
+  "game_id": 1103,
+  "game_timestamp": "2025-01-05T00:00:00",
+  "home_team": "orl",
+  "home_team_id": "orl",
+  "updated_at": "2025-01-27T22:37:16.506933+00:00"
+}
