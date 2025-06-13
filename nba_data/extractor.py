@@ -272,6 +272,65 @@ class BoxScoreFetcher:
                     conn.close()
                 except Exception:
                     pass
+
+    def fetch_and_save_game(self, event_id: str) -> bool:
+        """Download a single game's boxscore and persist it."""
+        conn = None
+        try:
+            conn = psycopg2.connect(self.conn_string)
+            conn.autocommit = False
+
+            with conn.cursor(cursor_factory=RealDictCursor) as cursor:
+                cursor.execute(
+                    """
+                    SELECT g.*, home.team_id as home_team, away.team_id as away_team
+                    FROM games g
+                    JOIN teams home ON g.home_team_id = home.team_id
+                    JOIN teams away ON g.away_team_id = away.team_id
+                    WHERE g.event_id = %s
+                """,
+                    (event_id,),
+                )
+                game = cursor.fetchone()
+
+            if not game:
+                logger.error(f"Game {event_id} not found in database")
+                return False
+
+            game_id = game["game_id"]
+            home_team_id = game["home_team"]
+            away_team_id = game["away_team"]
+
+            url = (
+                f"https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event={event_id}"
+            )
+            resp = requests.get(url, timeout=10)
+            resp.raise_for_status()
+            boxscore_data = resp.json()
+
+            self.save_team_stats(conn, game_id, home_team_id, boxscore_data)
+            self.save_team_stats(conn, game_id, away_team_id, boxscore_data)
+            self.save_player_stats(conn, game_id, home_team_id, boxscore_data)
+            self.save_player_stats(conn, game_id, away_team_id, boxscore_data)
+
+            for team_abbr in [home_team_id, away_team_id]:
+                self._update_player_positions(conn, game_id, team_abbr, boxscore_data)
+
+            conn.commit()
+
+            team_folder = os.path.join(self.game_data_path, home_team_id)
+            os.makedirs(team_folder, exist_ok=True)
+            self.process_game(game, team_folder)
+            return True
+
+        except Exception as e:
+            if conn:
+                conn.rollback()
+            logger.error(f"Failed to fetch and save game {event_id}: {e}")
+            return False
+        finally:
+            if conn:
+                conn.close()
     def _update_player_positions(self, conn, game_id, team_abbr, boxscore_data):
         with conn.cursor() as cursor:
             cursor.execute("""
