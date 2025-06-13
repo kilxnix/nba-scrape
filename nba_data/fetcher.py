@@ -13,10 +13,11 @@ from bs4 import BeautifulSoup
 from .teams import NBA_TEAMS
 import psycopg2
 import hashlib
-from datetime import datetime
+from datetime import datetime, timedelta
 from .database import db_transaction
 import requests
 from .teams import NBA_TEAMS
+from .utils import parse_game_date, current_season_start_year
 
 class NBAScheduleFetcher:
     def __init__(self, conn_string: str):
@@ -437,6 +438,46 @@ class NBAScheduleFetcher:
         except Exception as e:
             logging.error(f"Error fetching schedule: {e}")
             return []
+
+    def fetch_team_schedule_api(self, team_abbr: str):
+        """Fetch a team's schedule using ESPN's public JSON API."""
+        schedule = []
+        today = datetime.utcnow()
+        season_start = datetime(current_season_start_year(today), 10, 1)
+        season_end = datetime(current_season_start_year(today) + 1, 7, 1)
+        cur = season_start
+        while cur <= season_end:
+            url = (
+                "https://site.web.api.espn.com/apis/v2/sports/basketball/nba/scoreboard"
+                f"?dates={cur.strftime('%Y-%m-%d')}"
+            )
+            try:
+                resp = requests.get(url, timeout=10)
+                if resp.status_code != 200:
+                    cur += timedelta(days=1)
+                    continue
+                data = resp.json()
+                for event in data.get('events', []):
+                    eid = event.get('id')
+                    comp = event.get('competitions', [{}])[0]
+                    comps = comp.get('competitors', [])
+                    if len(comps) < 2:
+                        continue
+                    home = comps[0]['team']['abbreviation'].lower()
+                    away = comps[1]['team']['abbreviation'].lower()
+                    if team_abbr in [home, away]:
+                        schedule.append(
+                            {
+                                'event_id': eid,
+                                'date': event.get('date'),
+                                'home_team': home,
+                                'away_team': away,
+                            }
+                        )
+            except Exception:
+                pass
+            cur += timedelta(days=1)
+        return schedule
     
     def get_db_connection(self):
         conn = None
@@ -460,12 +501,12 @@ class NBAScheduleFetcher:
                     # Extract game metadata
                     event_id = game['event_id']
                     date_str = game['date'].strip()
-                    
-                    # Parse game date
-                    date_parts = date_str.split(', ')[1].strip().split(' ')
-                    month, day = date_parts[0], int(date_parts[1])
-                    year = 2024 if month.lower() in ['oct', 'nov', 'dec'] else 2025
-                    game_date = f"{year}-{datetime.strptime(month,'%b').month:02d}-{day:02d}"
+
+                    # Parse game date using dynamic season logic
+                    parsed_dt = parse_game_date(date_str)
+                    if not parsed_dt:
+                        continue
+                    game_date = parsed_dt.strftime('%Y-%m-%d')
                     
                     # Use the improved DOM-based resolution for all teams
                     home_team_id, away_team_id = self._resolve_team_by_selenium(event_id)

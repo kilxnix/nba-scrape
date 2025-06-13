@@ -314,6 +314,17 @@ def fetch_date_range_schedules():
     except Exception as e:
         print(f"Date Range Schedule Acquisition Error: {e}")
         return jsonify({'error': str(e)}), 500
+
+
+@app.route('/team_schedule/<team_abbr>', methods=['GET'])
+def team_schedule(team_abbr):
+    """Return the full schedule for a team using the ESPN API."""
+    team_abbr = team_abbr.lower()
+    if team_abbr not in NBA_TEAMS:
+        return jsonify({'error': 'Invalid team abbreviation'}), 400
+
+    games = schedule_fetcher.fetch_team_schedule_api(team_abbr)
+    return jsonify(games)
        
 @app.route('/todays_games', methods=['GET'])
 def todays_games():
