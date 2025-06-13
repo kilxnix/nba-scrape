@@ -1,0 +1,13 @@
+{
+  "away_team": "min",
+  "away_team_id": "min",
+  "created_at": "2025-01-27T21:03:10.229492+00:00",
+  "data_hash": "5738cce439853d9481946e22406c7de698422e4d538057f4f31c15c08bcc0d65",
+  "event_id": "401705180",
+  "game_date": "2025-01-22",
+  "game_id": 1356,
+  "game_timestamp": "2025-01-22T00:00:00",
+  "home_team": "dal",
+  "home_team_id": "dal",
+  "updated_at": "2025-01-27T22:38:33.507445+00:00"
+}

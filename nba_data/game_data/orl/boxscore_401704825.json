@@ -1,0 +1,13 @@
+{
+  "away_team": "orl",
+  "away_team_id": "orl",
+  "created_at": "2025-01-27T21:02:16.662897+00:00",
+  "data_hash": "022b4f6792a6e78e7c815441a56f7f171dbee67fe18e44219d1f36b591c58304",
+  "event_id": "401704825",
+  "game_date": "2024-11-20",
+  "game_id": 1082,
+  "game_timestamp": "2024-11-20T00:00:00",
+  "home_team": "lac",
+  "home_team_id": "lac",
+  "updated_at": "2025-01-27T22:37:42.580691+00:00"
+}

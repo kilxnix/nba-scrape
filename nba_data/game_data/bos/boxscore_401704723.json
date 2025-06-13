@@ -1,0 +1,13 @@
+{
+  "away_team": "bos",
+  "away_team_id": "bos",
+  "created_at": "2025-01-27T20:58:22.074612+00:00",
+  "data_hash": "450b363b7bb7510fc7b39b53ce53126aaea21b5bcdfd2163c6778a1ec781e959",
+  "event_id": "401704723",
+  "game_date": "2024-11-04",
+  "game_id": 8,
+  "game_timestamp": "2024-11-04T00:00:00",
+  "home_team": "atl",
+  "home_team_id": "atl",
+  "updated_at": "2025-01-27T22:35:20.385605+00:00"
+}

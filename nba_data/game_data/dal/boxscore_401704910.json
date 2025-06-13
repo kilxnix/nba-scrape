@@ -1,0 +1,13 @@
+{
+  "away_team": "dal",
+  "away_team_id": "dal",
+  "created_at": "2025-01-27T20:59:33.901233+00:00",
+  "data_hash": "213f3e5484f3213e09e33ab417dfd12f4853b1a3ab76cc2a49de62d4c52f017e",
+  "event_id": "401704910",
+  "game_date": "2024-12-07",
+  "game_id": 352,
+  "game_timestamp": "2024-12-07T00:00:00",
+  "home_team": "tor",
+  "home_team_id": "tor",
+  "updated_at": "2025-01-27T22:38:33.507445+00:00"
+}

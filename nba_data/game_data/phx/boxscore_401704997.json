@@ -1,0 +1,13 @@
+{
+  "away_team": "phx",
+  "away_team_id": "phx",
+  "created_at": "2025-01-27T21:04:22.847854+00:00",
+  "data_hash": "15d06b5289abc4ac9c10a8e1ff2426e2112e68333be1271bef465f138a1d7f7e",
+  "event_id": "401704997",
+  "game_date": "2024-12-28",
+  "game_id": 1672,
+  "game_timestamp": "2024-12-28T00:00:00",
+  "home_team": "gsw",
+  "home_team_id": "gsw",
+  "updated_at": "2025-01-27T22:38:07.762408+00:00"
+}

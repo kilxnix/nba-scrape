@@ -1,0 +1,13 @@
+{
+  "away_team": "no",
+  "away_team_id": "no",
+  "created_at": "2025-01-27T21:04:22.847854+00:00",
+  "data_hash": "5a15c6251f9e82053094d42e54d33ad5bb61ec99c81379b3a2d5df8f60a786be",
+  "event_id": "401704692",
+  "game_date": "2024-10-30",
+  "game_id": 1646,
+  "game_timestamp": "2024-10-30T00:00:00",
+  "home_team": "gsw",
+  "home_team_id": "gsw",
+  "updated_at": "2025-01-27T22:39:11.890426+00:00"
+}

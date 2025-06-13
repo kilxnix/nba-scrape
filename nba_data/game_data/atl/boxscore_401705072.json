@@ -1,0 +1,13 @@
+{
+  "away_team": "atl",
+  "away_team_id": "atl",
+  "created_at": "2025-01-27T21:01:22.828600+00:00",
+  "data_hash": "303ca2d7bab8d9cd7f37274d5ced6d1f94b0df32d11acb8522638ad824732b88",
+  "event_id": "401705072",
+  "game_date": "2025-01-07",
+  "game_id": 857,
+  "game_timestamp": "2025-01-07T00:00:00",
+  "home_team": "utah",
+  "home_team_id": "utah",
+  "updated_at": "2025-01-27T22:37:16.506933+00:00"
+}

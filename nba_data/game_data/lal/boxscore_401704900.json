@@ -1,0 +1,13 @@
+{
+  "away_team": "lal",
+  "away_team_id": "lal",
+  "created_at": "2025-01-27T21:01:22.828600+00:00",
+  "data_hash": "4093df78a832c3913ac621873697a43189f258c16c2ccbbcac72cafd9638a72a",
+  "event_id": "401704900",
+  "game_date": "2024-12-06",
+  "game_id": 844,
+  "game_timestamp": "2024-12-06T00:00:00",
+  "home_team": "atl",
+  "home_team_id": "atl",
+  "updated_at": "2025-01-27T22:37:55.170106+00:00"
+}

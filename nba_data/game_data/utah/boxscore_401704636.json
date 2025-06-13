@@ -1,0 +1,12 @@
+{
+  "away_team": "mem",
+  "away_team_id": "mem",
+  "created_at": "2025-01-27T21:04:04.713241+00:00",
+  "data_hash": "38da2472119444a9ce3c36bc870e857d277b3e7a84631cea0d45bdcdf2424518",
+  "event_id": "401704636",
+  "game_date": "2024-10-23",
+  "game_id": 1560,
+  "home_team": "utah",
+  "home_team_id": "utah",
+  "updated_at": "2025-01-30T23:20:01.760802+00:00"
+}

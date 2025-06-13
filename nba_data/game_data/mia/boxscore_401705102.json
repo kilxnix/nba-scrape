@@ -1,0 +1,13 @@
+{
+  "away_team": "mia",
+  "away_team_id": "mia",
+  "created_at": "2025-01-27T21:01:58.596112+00:00",
+  "data_hash": "b94eeeac2ad8fecf2cea6e23a016ee6ad37b6c2092c95e9769f53362307a3e1a",
+  "event_id": "401705102",
+  "game_date": "2025-01-11",
+  "game_id": 1021,
+  "game_timestamp": "2025-01-11T00:00:00",
+  "home_team": "por",
+  "home_team_id": "por",
+  "updated_at": "2025-01-27T22:37:03.831695+00:00"
+}

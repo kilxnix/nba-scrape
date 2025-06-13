@@ -1,0 +1,12 @@
+{
+  "away_team": "phx",
+  "away_team_id": "phx",
+  "created_at": "2025-01-27T20:59:33.901233+00:00",
+  "data_hash": "ed82c8dd99d37e32870d8d3e7697e15c104a8758c8fef6d12ccf772eb8d64a03",
+  "event_id": "401705382",
+  "game_date": "2025-02-23",
+  "game_id": 385,
+  "home_team": "tor",
+  "home_team_id": "tor",
+  "updated_at": "2025-01-31T04:14:52.918648+00:00"
+}

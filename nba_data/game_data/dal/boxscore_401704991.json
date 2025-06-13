@@ -1,0 +1,13 @@
+{
+  "away_team": "dal",
+  "away_team_id": "dal",
+  "created_at": "2025-01-27T21:05:17.278316+00:00",
+  "data_hash": "603b6a70e139ef40e1acf325a820e3989b53276ca59a086d6d363fb2f9e9c835",
+  "event_id": "401704991",
+  "game_date": "2024-12-27",
+  "game_id": 1916,
+  "game_timestamp": "2024-12-27T00:00:00",
+  "home_team": "phx",
+  "home_team_id": "phx",
+  "updated_at": "2025-01-27T22:38:33.507445+00:00"
+}

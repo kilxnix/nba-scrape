@@ -1,0 +1,13 @@
+{
+  "away_team": "utah",
+  "away_team_id": "utah",
+  "created_at": "2025-01-27T21:03:46.735318+00:00",
+  "data_hash": "e2f556085b53cd0d10581f2abf8d35ac165f3a7c596cb2e74e81ac1f36f70916",
+  "event_id": "401704905",
+  "game_date": "2024-12-06",
+  "game_id": 1500,
+  "game_timestamp": "2024-12-06T00:00:00",
+  "home_team": "por",
+  "home_team_id": "por",
+  "updated_at": "2025-01-27T22:37:16.506933+00:00"
+}

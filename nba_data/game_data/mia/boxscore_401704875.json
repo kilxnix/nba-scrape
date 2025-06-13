@@ -1,0 +1,13 @@
+{
+  "away_team": "mia",
+  "away_team_id": "mia",
+  "created_at": "2025-01-27T20:59:33.901233+00:00",
+  "data_hash": "55e19c09498956b7801f0ac6e9712bed797f5e4ec65531e9eb7ebb111352a43a",
+  "event_id": "401704875",
+  "game_date": "2024-12-01",
+  "game_id": 349,
+  "game_timestamp": "2024-12-01T00:00:00",
+  "home_team": "tor",
+  "home_team_id": "tor",
+  "updated_at": "2025-01-27T22:35:46.732356+00:00"
+}

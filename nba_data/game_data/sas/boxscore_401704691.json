@@ -1,0 +1,13 @@
+{
+  "away_team": "sas",
+  "away_team_id": "sas",
+  "created_at": "2025-01-27T21:03:28.478454+00:00",
+  "data_hash": "3617af171b025ec17df7a0a436b73e5092ce94e004551642fcef5f92dae15995",
+  "event_id": "401704691",
+  "game_date": "2024-10-30",
+  "game_id": 1398,
+  "game_timestamp": "2024-10-30T00:00:00",
+  "home_team": "okc",
+  "home_team_id": "okc",
+  "updated_at": "2025-01-27T22:39:24.771480+00:00"
+}

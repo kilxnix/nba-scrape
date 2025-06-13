@@ -1,0 +1,13 @@
+{
+  "away_team": "phi",
+  "away_team_id": "phi",
+  "created_at": "2025-01-27T20:59:16.102488+00:00",
+  "data_hash": "5e8c69657a6dac6fa7284ef53c02c9c2a606e1d7dd89f31be47ffa155f702b7b",
+  "event_id": "401704644",
+  "game_date": "2024-10-25",
+  "game_id": 248,
+  "game_timestamp": "2024-10-25T00:00:00",
+  "home_team": "tor",
+  "home_team_id": "tor",
+  "updated_at": "2025-01-27T22:34:03.237943+00:00"
+}

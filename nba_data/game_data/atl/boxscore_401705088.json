@@ -1,0 +1,13 @@
+{
+  "away_team": "atl",
+  "away_team_id": "atl",
+  "created_at": "2025-01-27T21:01:22.828600+00:00",
+  "data_hash": "06dbb97f0debd1a1ac0ee4746b023f34c106bea776157ea6b2129c9cc9a4a73f",
+  "event_id": "401705088",
+  "game_date": "2025-01-09",
+  "game_id": 858,
+  "game_timestamp": "2025-01-09T00:00:00",
+  "home_team": "phx",
+  "home_team_id": "phx",
+  "updated_at": "2025-01-27T22:38:07.762408+00:00"
+}

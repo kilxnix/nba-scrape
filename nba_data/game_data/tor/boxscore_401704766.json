@@ -1,0 +1,13 @@
+{
+  "away_team": "tor",
+  "away_team_id": "tor",
+  "created_at": "2025-01-27T20:59:33.901233+00:00",
+  "data_hash": "d1ead6b9d62508514df600e57bb7a50cf070a1ab7a206a69ee976bcd79fda931",
+  "event_id": "401704766",
+  "game_date": "2024-11-09",
+  "game_id": 338,
+  "game_timestamp": "2024-11-09T00:00:00",
+  "home_team": "lac",
+  "home_team_id": "lac",
+  "updated_at": "2025-01-27T22:37:42.580691+00:00"
+}

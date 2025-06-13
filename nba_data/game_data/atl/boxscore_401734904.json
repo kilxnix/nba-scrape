@@ -1,0 +1,13 @@
+{
+  "away_team": "atl",
+  "away_team_id": "atl",
+  "created_at": "2025-01-27T20:58:58.077773+00:00",
+  "data_hash": "93688d00aef85959f82486a71120c1fa1f8bc2855429b8061922e86adf22bb8a",
+  "event_id": "401734904",
+  "game_date": "2024-12-11",
+  "game_id": 189,
+  "game_timestamp": "2024-12-11T00:00:00",
+  "home_team": "nyk",
+  "home_team_id": "nyk",
+  "updated_at": "2025-01-27T22:35:20.385605+00:00"
+}

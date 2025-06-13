@@ -1,0 +1,13 @@
+{
+  "away_team": "phi",
+  "away_team_id": "phi",
+  "created_at": "2025-01-27T20:59:16.102488+00:00",
+  "data_hash": "c2469c1aab967f10b386943394eefafa0c0215ac883c379628e30c76b7abb2bf",
+  "event_id": "401705028",
+  "game_date": "2025-01-01",
+  "game_id": 277,
+  "game_timestamp": "2025-01-01T00:00:00",
+  "home_team": "sac",
+  "home_team_id": "sac",
+  "updated_at": "2025-01-27T22:38:20.692423+00:00"
+}

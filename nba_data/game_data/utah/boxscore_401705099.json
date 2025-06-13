@@ -1,0 +1,13 @@
+{
+  "away_team": "utah",
+  "away_team_id": "utah",
+  "created_at": "2025-01-27T21:04:04.713241+00:00",
+  "data_hash": "36bcc2ffa414485f3619005d0d0dd039a4d2cac2a6edfc4695afeb59d997c050",
+  "event_id": "401705099",
+  "game_date": "2025-01-11",
+  "game_id": 1596,
+  "game_timestamp": "2025-01-11T00:00:00",
+  "home_team": "phx",
+  "home_team_id": "phx",
+  "updated_at": "2025-01-27T22:38:07.762408+00:00"
+}

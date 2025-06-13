@@ -1,0 +1,13 @@
+{
+  "away_team": "gsw",
+  "away_team_id": "gsw",
+  "created_at": "2025-01-27T21:04:22.847854+00:00",
+  "data_hash": "446f0fe027f5cd05654dd6c9d67107eb2d89c25ffd5161552e418ca38e6579fb",
+  "event_id": "401704817",
+  "game_date": "2024-11-18",
+  "game_id": 1654,
+  "game_timestamp": "2024-11-18T00:00:00",
+  "home_team": "lac",
+  "home_team_id": "lac",
+  "updated_at": "2025-01-27T22:37:42.580691+00:00"
+}

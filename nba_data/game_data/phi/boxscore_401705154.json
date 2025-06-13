@@ -1,0 +1,13 @@
+{
+  "away_team": "phi",
+  "away_team_id": "phi",
+  "created_at": "2025-01-27T20:59:16.102488+00:00",
+  "data_hash": "0f40e0b60193c14e5f03653e3f6aba7877723556f10801ba99887e04d34f1ca7",
+  "event_id": "401705154",
+  "game_date": "2025-01-18",
+  "game_id": 286,
+  "game_timestamp": "2025-01-18T00:00:00",
+  "home_team": "ind",
+  "home_team_id": "ind",
+  "updated_at": "2025-01-27T22:34:54.463790+00:00"
+}

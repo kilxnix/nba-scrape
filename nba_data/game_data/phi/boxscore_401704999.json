@@ -1,0 +1,13 @@
+{
+  "away_team": "phi",
+  "away_team_id": "phi",
+  "created_at": "2025-01-27T20:59:16.102488+00:00",
+  "data_hash": "061b13eddf1cb949200dedd7fb082cc7fb07447656e7b1aa5ea60a337a5cb55b",
+  "event_id": "401704999",
+  "game_date": "2024-12-28",
+  "game_id": 275,
+  "game_timestamp": "2024-12-28T00:00:00",
+  "home_team": "utah",
+  "home_team_id": "utah",
+  "updated_at": "2025-01-27T22:37:16.506933+00:00"
+}

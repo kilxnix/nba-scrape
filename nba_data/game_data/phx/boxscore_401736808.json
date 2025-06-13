@@ -1,0 +1,13 @@
+{
+  "away_team": "phx",
+  "away_team_id": "phx",
+  "created_at": "2025-01-27T21:04:04.713241+00:00",
+  "data_hash": "d72a9ba53610709098db94393e7375ffef91b215f9548304502a4a6f6d3942ba",
+  "event_id": "401736808",
+  "game_date": "2024-12-13",
+  "game_id": 1583,
+  "game_timestamp": "2024-12-13T00:00:00",
+  "home_team": "utah",
+  "home_team_id": "utah",
+  "updated_at": "2025-01-27T22:38:07.762408+00:00"
+}

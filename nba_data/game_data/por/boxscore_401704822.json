@@ -1,0 +1,13 @@
+{
+  "away_team": "por",
+  "away_team_id": "por",
+  "created_at": "2025-01-27T21:03:28.478454+00:00",
+  "data_hash": "9fdd8eae702b1e829324bcf629918ff88b907ddd1719b159edf15601aea15cf8",
+  "event_id": "401704822",
+  "game_date": "2024-11-20",
+  "game_id": 1410,
+  "game_timestamp": "2024-11-20T00:00:00",
+  "home_team": "okc",
+  "home_team_id": "okc",
+  "updated_at": "2025-01-27T22:37:03.831695+00:00"
+}

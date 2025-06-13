@@ -1,0 +1,13 @@
+{
+  "away_team": "cle",
+  "away_team_id": "cle",
+  "created_at": "2025-01-27T21:00:10.636133+00:00",
+  "data_hash": "706587736cceb435c9ad86e895daeb02192f2e6d2a164f6311cd20430523776f",
+  "event_id": "401705140",
+  "game_date": "2025-01-16",
+  "game_id": 532,
+  "game_timestamp": "2025-01-16T00:00:00",
+  "home_team": "okc",
+  "home_team_id": "okc",
+  "updated_at": "2025-01-27T22:36:50.885617+00:00"
+}
