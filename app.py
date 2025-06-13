@@ -314,6 +314,17 @@ def fetch_date_range_schedules():
     except Exception as e:
         print(f"Date Range Schedule Acquisition Error: {e}")
         return jsonify({'error': str(e)}), 500
+
+
+@app.route('/team_schedule/<team_abbr>', methods=['GET'])
+def team_schedule(team_abbr):
+    """Return the full schedule for a team using ESPN's schedule page."""
+    team_abbr = team_abbr.lower()
+    if team_abbr not in NBA_TEAMS:
+        return jsonify({'error': 'Invalid team abbreviation'}), 400
+
+    games = schedule_fetcher.fetch_team_schedule_api(team_abbr)
+    return jsonify(games)
        
 @app.route('/todays_games', methods=['GET'])
 def todays_games():
@@ -364,6 +375,30 @@ def fetch_boxscores():
 
     except Exception as e:
         print(f"Processing Error: {e}")
+        return jsonify({'error': str(e)}), 500
+
+
+@app.route('/update_team_data/<team_abbr>', methods=['POST'])
+def update_team_data(team_abbr):
+    """Fetch a team's schedule then download and store its boxscores."""
+    team_abbr = team_abbr.lower()
+    if team_abbr not in NBA_TEAMS:
+        return jsonify({'error': 'Invalid team abbreviation'}), 400
+
+    try:
+        games = schedule_fetcher.fetch_team_schedule_api(team_abbr)
+        with db_transaction() as conn:
+            saved = schedule_fetcher.save_schedule(team_abbr, games, conn)
+
+        processed = 0
+        for game in games:
+            if boxscore_fetcher.fetch_and_save_game(game['event_id']):
+                processed += 1
+
+        return jsonify({'message': 'Team data updated',
+                        'games_saved': saved,
+                        'boxscores_processed': processed})
+    except Exception as e:
         return jsonify({'error': str(e)}), 500
 
 @app.route('/fetch_plays', methods=['POST'])
