@@ -13,11 +13,11 @@ from bs4 import BeautifulSoup
 from .teams import NBA_TEAMS
 import psycopg2
 import hashlib
-from datetime import datetime, timedelta
+from datetime import datetime
 from .database import db_transaction
 import requests
 from .teams import NBA_TEAMS
-from .utils import parse_game_date, current_season_start_year
+from .utils import parse_game_date
 
 class NBAScheduleFetcher:
     def __init__(self, conn_string: str):
@@ -440,44 +440,55 @@ class NBAScheduleFetcher:
             return []
 
     def fetch_team_schedule_api(self, team_abbr: str):
-        """Fetch a team's schedule using ESPN's public JSON API."""
-        schedule = []
-        today = datetime.utcnow()
-        season_start = datetime(current_season_start_year(today), 10, 1)
-        season_end = datetime(current_season_start_year(today) + 1, 7, 1)
-        cur = season_start
-        while cur <= season_end:
-            url = (
-                "https://site.web.api.espn.com/apis/v2/sports/basketball/nba/scoreboard"
-                f"?dates={cur.strftime('%Y-%m-%d')}"
-            )
-            try:
-                resp = requests.get(url, timeout=10)
-                if resp.status_code != 200:
-                    cur += timedelta(days=1)
+        """Fetch a team's full schedule using ESPN's team schedule page.
+
+        This implementation avoids Selenium by requesting the schedule HTML
+        directly and parsing the table rows with BeautifulSoup.  It captures all
+        regular season and playoff games that are present on the page.
+        """
+        url = f"https://www.espn.com/nba/team/schedule/_/name/{team_abbr}"
+        headers = {"User-Agent": "Mozilla/5.0"}
+        try:
+            resp = requests.get(url, headers=headers, timeout=10)
+            if resp.status_code != 200:
+                logging.error(
+                    "Schedule request failed for %s: status %s",
+                    team_abbr,
+                    resp.status_code,
+                )
+                return []
+
+            soup = BeautifulSoup(resp.text, "html.parser")
+            games = []
+            rows = soup.select("tr.Table__TR")
+            for row in rows:
+                cells = row.find_all("td", class_="Table__TD")
+                if len(cells) < 2:
                     continue
-                data = resp.json()
-                for event in data.get('events', []):
-                    eid = event.get('id')
-                    comp = event.get('competitions', [{}])[0]
-                    comps = comp.get('competitors', [])
-                    if len(comps) < 2:
-                        continue
-                    home = comps[0]['team']['abbreviation'].lower()
-                    away = comps[1]['team']['abbreviation'].lower()
-                    if team_abbr in [home, away]:
-                        schedule.append(
-                            {
-                                'event_id': eid,
-                                'date': event.get('date'),
-                                'home_team': home,
-                                'away_team': away,
-                            }
-                        )
-            except Exception:
-                pass
-            cur += timedelta(days=1)
-        return schedule
+
+                # Skip header rows
+                if cells[0].text.strip().upper() == "DATE":
+                    continue
+
+                link = row.find("a", href=lambda x: x and "gameId" in x)
+                if not link:
+                    continue
+
+                event_id = link["href"].split("gameId/")[1].split("/")[0]
+                games.append(
+                    {
+                        "date": cells[0].text.strip(),
+                        "opponent": cells[1].text.strip(),
+                        "event_id": event_id,
+                    }
+                )
+
+            logging.info("Found %d games for %s", len(games), team_abbr)
+            return games
+
+        except Exception as e:
+            logging.error("Error fetching schedule for %s: %s", team_abbr, e)
+            return []
     
     def get_db_connection(self):
         conn = None
